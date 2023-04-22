@@ -1,0 +1,3 @@
+[submodule "NanoGUI"]
+	path = NanoGUI
+	url = https://github.com/iyadahmed/NanoGUI.git
