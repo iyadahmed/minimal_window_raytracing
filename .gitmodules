@@ -1,0 +1,3 @@
+[submodule "minimal_window"]
+	path = minimal_window
+	url = https://github.com/iyadahmed/minimal_window.git

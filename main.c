@@ -1,10 +1,10 @@
-#include "NanoGUI/nanogui.h"
+#include <minimal_window.h>
 #include "lib.h"
 
 int main()
 {
     int width = 640, height = 480;
-    nano_gui_create_fixed_size_window(width, height);
+    minimal_window_create_fixed_size_window(width, height);
 
     point_light_t light1;
     light1.power = 1.0f;
@@ -12,7 +12,7 @@ int main()
     light1.position = (vec3_t){-1.0f, -1.0f, 0.0f};
 
     // Main loop
-    while (nano_gui_process_events())
+    while (minimal_window_process_events())
     {
         for (int i = 0; i < width; i++)
         {
@@ -38,11 +38,11 @@ int main()
                     uint8_t r = (uint8_t)clampf(lighting.color.x * 255, 0, 255);
                     uint8_t g = (uint8_t)clampf(lighting.color.y * 255, 0, 255);
                     uint8_t b = (uint8_t)clampf(lighting.color.z * 255, 0, 255);
-                    nano_gui_draw_pixel(i, j, r, g, b);
+                    minimal_window_draw_pixel(i, j, r, g, b);
                 }
                 else
                 {
-                    nano_gui_draw_pixel(i, j, 0, 0, 0);
+                    minimal_window_draw_pixel(i, j, 0, 0, 0);
                 }
             }
         }
