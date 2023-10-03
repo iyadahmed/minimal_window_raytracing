@@ -16,7 +16,7 @@ find_library(LIB_MATH m)
 CPMAddPackage(
     NAME minimal_window
     GITHUB_REPOSITORY iyadahmed/minimal_window
-    GIT_TAG d8ad68a06f4812602d9fa785a59b0fdb255a7c76
+    GIT_TAG b0b12e7c720575a102f152c268d76bdd1eae2a89
     OPTIONS
 
     # Uncomment to force X11 on Linux
